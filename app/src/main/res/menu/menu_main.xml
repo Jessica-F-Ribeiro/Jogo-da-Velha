@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.jessica.sp.cotia.jogodavelhaapp.activity.MainActivity">
+    <item
+        android:id="@+id/menu_resetar"
+        android:title="@string/resetar"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_revert"/>
+    <item
+        android:id="@+id/menu_inicio"
+        android:title="@string/tela_inicial"
+        app:showAsAction="never"
+        android:icon="@android:drawable/ic_menu_add"/>
+    <item
+        android:id="@+id/menu_prefs"
+        android:title="@string/preferencias"
+        app:showAsAction="never"
+        android:icon="@android:drawable/ic_menu_preferences"/>
+</menu>

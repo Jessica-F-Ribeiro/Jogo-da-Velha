@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentJogo">
+
+
+    <fragment
+        android:id="@+id/fragmentInicio"
+        android:name="br.jessica.sp.cotia.jogodavelhaapp.fragment.FragmentInicio"
+        android:label="fragment_fragmentinicio"
+        tools:layout="@layout/fragment_fragmentinicio" >
+        <action
+            android:id="@+id/action_fragmentInicio_to_fragmentJogo"
+            app:destination="@id/fragmentJogo" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentJogo"
+        android:name="br.jessica.sp.cotia.jogodavelhaapp.fragment.FragmentJogo"
+        android:label="Jogo da Velha"
+        tools:layout="@layout/fragment_jogo" >
+        <action
+            android:id="@+id/action_fragmentJogo_to_fragmentInicio"
+            app:destination="@id/fragmentInicio" />
+        <action
+            android:id="@+id/action_fragmentJogo_to_prefFragment"
+            app:destination="@id/prefFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/prefFragment"
+        android:name="br.jessica.sp.cotia.jogodavelhaapp.fragment.PrefFragment"
+        android:label="@string/preferencias"
+        tools:layout="@layout/fragment_pref" />
+</navigation>
